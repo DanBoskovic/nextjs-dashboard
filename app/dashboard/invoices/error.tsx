@@ -1,8 +1,12 @@
 'use client';
 
 import { useEffect } from 'react';
+import { Metadata } from 'next';
 
-export default function Error({
+export const metadata: Metadata = {
+  title: 'Error',
+};
+export default function ErrorPage({
   error,
   reset,
 }: Readonly<{
